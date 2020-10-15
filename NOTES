@@ -1,0 +1,18 @@
+Exercises
+
+- Section 6 of the paper sketches the changes needed for adding
+  multiplication support to the compiler. Implement it in Lean.
+
+- The compiler uses a map from variables to registers. What if it
+  maps two variables to the same register? Does Theorem 1 allow or
+  prevent that?
+
+- The paper defines compiler correctness using partial equality
+  over two machine states ("map-down"): the resulting machine state
+  by running the compiled code and the machine state constructed
+  by putting the value of the expression into the accumulator.
+
+  Suppose one instead defines compiler correctness in a "map-up"
+  style, using equality over the value of the accumulator in the
+  resulting machine state by running the compiled code and the value
+  of the expression.  How do you compare the two specifications?
